@@ -1,0 +1,63 @@
+﻿@{
+    ViewData["Title"] = "FAQ";
+}
+
+<!-- Add Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+<div class="container mt-5">
+    <div class="text-center py-5" style="background-color: #f4f4f4; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+        <h1 class="display-4" style="font-family: 'Merriweather', serif; color: #3A3A3A;">Frequently Asked Questions</h1>
+        <hr class="my-4" style="border: 1px solid #3A3A3A; width: 60%; margin: auto;">
+    </div>
+
+    <div class="py-4">
+        <!-- Question 1 -->
+        <div class="mb-4 question" style="font-family: 'Merriweather', serif;">
+            <h4 style="color: #3A3A3A;">What is Book Donors?</h4>
+            <p style="font-size: 1rem; color: #555;">
+                Book Donors is a platform connecting book donors with people in need of books, promoting education and sharing knowledge.
+            </p>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="mb-4 question" style="font-family: 'Merriweather', serif;">
+            <h4 style="color: #3A3A3A;">How can I donate books?</h4>
+            <p style="font-size: 1rem; color: #555;">
+                You can donate books by clicking the "Donate a Book" button on our homepage and filling out the required details.
+            </p>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="mb-4 question" style="font-family: 'Merriweather', serif;">
+            <h4 style="color: #3A3A3A;">How do I become a donor?</h4>
+            <p style="font-size: 1rem; color: #555;">
+                Simply click "Become a Donor" on the homepage, and follow the steps to register as a donor.
+            </p>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="mb-4 question" style="font-family: 'Merriweather', serif;">
+            <h4 style="color: #3A3A3A;">Is there a fee to use this service?</h4>
+            <p style="font-size: 1rem; color: #555;">
+                No, Book Donors is completely free to use for donors and recipients.
+            </p>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Hover style for questions */
+    .question h4 {
+        transition: color 0.3s ease, text-decoration 0.3s ease;
+    }
+
+    .question:hover h4 {
+        color: #6A0DAD; /* Purple hover color */
+        text-decoration: underline;
+    }
+
+    .question:hover p {
+        color: #6A0DAD; /* Subtle color change for description text */
+    }
+</style>

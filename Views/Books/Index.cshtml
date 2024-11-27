@@ -1,0 +1,31 @@
+﻿@model IEnumerable<BookDonorsAPI.Models.Book>
+
+<h2>Books List</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>YearPublished</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var book in Model)
+
+        {
+            <tr>
+                <td>@book.Tittle</td>  <!-- Updated from Tittle to Title -->
+                <td>@book.Author</td>
+                <td>@book.Genre</td>
+                <td>@book.YearPublished</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@book.ID">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@book.ID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create">Add New Book</a>

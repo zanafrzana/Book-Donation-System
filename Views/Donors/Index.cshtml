@@ -1,0 +1,44 @@
+﻿@model IEnumerable<BookDonorsAPI.Models.Donor>
+
+<h2 class="text-center my-4">Donors List</h2>
+<div class="table-responsive">
+    <table class="table table-bordered table-striped text-center">
+        <thead class="table-dark">
+            <tr>
+                <th>Donor Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Book Title</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (!Model.Any())
+            {
+                <tr>
+                    <td colspan="5" class="text-muted">No donors found. Add a new donor to populate the list.</td>
+                </tr>
+            }
+            else
+            {
+                @foreach (var donor in Model)
+                {
+                    <tr>
+                        <td>@donor.Name</td>
+                        <td>@donor.Email</td>
+                        <td>@donor.Phone</td>
+                        <td>@donor.BookTittle</td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@donor.DonorID" class="btn btn-primary btn-sm">Edit</a>
+                            <a asp-action="Delete" asp-route-id="@donor.DonorID" class="btn btn-danger btn-sm">Delete</a>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+<div class="d-flex justify-content-end">
+    <a asp-action="Create" class="btn btn-success">Add New Donor</a>
+</div>

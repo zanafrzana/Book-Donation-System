@@ -1,0 +1,94 @@
+﻿@{
+    ViewData["Title"] = "Welcome to Book Donors!";
+}
+
+<!-- Include Google Fonts for "Pacifico" font -->
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+<div style="min-height: 100vh; background: #eae6f9; color: #4a148c; font-family: 'Poppins', sans-serif;">
+    <!-- Hero Section -->
+    <div style="text-align: center; padding: 50px 20px;">
+        <h1 style="font-family: 'Pacifico', cursive; font-size: 3rem; font-weight: bold; margin-bottom: 10px;">
+            Discover, Donate, Inspire.
+        </h1>
+        <p style="font-size: 1.2rem; font-weight: 300; margin-bottom: 30px;">
+            Your book donations turn stories into endless possibilities. 📚💡
+        </p>
+        <hr style="border: 1px solid #4a148c; width: 60%; margin: auto; margin-bottom: 30px;">
+
+        <!-- Buttons Section -->
+        <div class="mt-4">
+            <a href="/Books/Create"
+               class="btn btn-lg mx-2"
+               style="background-color: #9b59b6; color: white; border-radius: 25px; padding: 15px 30px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); text-decoration: none; font-weight: bold; transition: all 0.3s ease;">
+                Donate a Book
+            </a>
+            <a href="/Donors/Create"
+               class="btn btn-lg mx-2"
+               style="background-color: #8e44ad; color: white; border-radius: 25px; padding: 15px 30px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); text-decoration: none; font-weight: bold; transition: all 0.3s ease;">
+                Become a Donor
+            </a>
+            <a href="/Books"
+               class="btn btn-lg mx-2"
+               style="background-color: #6a1b9a; color: white; border-radius: 25px; padding: 15px 30px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); text-decoration: none; font-weight: bold; transition: all 0.3s ease;">
+                Explore Books
+            </a>
+            <a href="/Donors"
+               class="btn btn-lg mx-2"
+               style="background-color: #512da8; color: white; border-radius: 25px; padding: 15px 30px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); text-decoration: none; font-weight: bold; transition: all 0.3s ease;">
+                View Donor List
+            </a>
+        </div>
+    </div>
+
+    <!-- Inspiring Quotes Section -->
+    <div class="container text-center my-5" style="background: #e4d9f9; padding: 40px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <h2 class="mb-4" style="font-size: 2.5rem; font-weight: bold; color: #4a148c;">Inspiring Quotes</h2>
+
+        <!-- Quote Cards -->
+        <div class="row">
+            <!-- Quote 1 -->
+            <div class="col-md-6 text-left">
+                <div class="quote-card" style="background-color: #f3e5f5; border-radius: 15px; padding: 20px; margin: 20px auto; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <p style="font-size: 1.3rem; font-style: italic; color: #4a148c;">"A room without books is like a body without a soul."</p>
+                    <footer style="color: #6a1b9a;">— Marcus Tullius Cicero</footer>
+                </div>
+            </div>
+            <!-- Quote 2 -->
+            <div class="col-md-6 text-right">
+                <div class="quote-card" style="background-color: #ede7f6; border-radius: 15px; padding: 20px; margin: 20px auto; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <p style="font-size: 1.3rem; font-style: italic; color: #4a148c;">"The more that you read, the more things you will know. The more that you learn, the more places you'll go."</p>
+                    <footer style="color: #6a1b9a;">— Dr. Seuss</footer>
+                </div>
+            </div>
+            <!-- Quote 3 -->
+            <div class="col-md-6 text-left">
+                <div class="quote-card" style="background-color: #f3e5f5; border-radius: 15px; padding: 20px; margin: 20px auto; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <p style="font-size: 1.3rem; font-style: italic; color: #4a148c;">"Books are a uniquely portable magic."</p>
+                    <footer style="color: #6a1b9a;">— Stephen King</footer>
+                </div>
+            </div>
+            <!-- Quote 4 -->
+            <div class="col-md-6 text-right">
+                <div class="quote-card" style="background-color: #ede7f6; border-radius: 15px; padding: 20px; margin: 20px auto; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <p style="font-size: 1.3rem; font-style: italic; color: #4a148c;">"Reading is essential for those who seek to rise above the ordinary."</p>
+                    <footer style="color: #6a1b9a;">— Jim Rohn</footer>
+                </div>
+            </div>
+            <!-- Quote 5 -->
+            <div class="col-md-6 text-left">
+                <div class="quote-card" style="background-color: #f3e5f5; border-radius: 15px; padding: 20px; margin: 20px auto; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <p style="font-size: 1.3rem; font-style: italic; color: #4a148c;">"Libraries store the energy that fuels the imagination."</p>
+                    <footer style="color: #6a1b9a;">— Sidney Sheldon</footer>
+                </div>
+            </div>
+            <!-- Quote 6 -->
+            <div class="col-md-6 text-right">
+                <div class="quote-card" style="background-color: #ede7f6; border-radius: 15px; padding: 20px; margin: 20px auto; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <p style="font-size: 1.3rem; font-style: italic; color: #4a148c;">"Once you learn to read, you will be forever free."</p>
+                    <footer style="color: #6a1b9a;">— Frederick Douglass</footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
